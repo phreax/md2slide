@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>md2slide</title>
+    <meta name="viewport" content="width=1024, user-scalable=no">
+    <link rel="stylesheet" href="deck.js/core/deck.core.css">
+    <link rel="stylesheet" href="deck.js/extensions/hash/deck.hash.css">
+    <link rel="stylesheet" href="deck.js/extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" href="deck.js/extensions/status/deck.status.css">
+    <link rel="stylesheet" id="style-theme-link" href="deck.js/themes/style/neon.css">
+    <link rel="stylesheet" id="style-theme-link" href="deck.js/themes/style/neon.css">
+     <link rel="stylesheet" id="transition-theme-link" href="deck.js/themes/transition/vertical-slide.css">
+
+     <!-- add custom stylesheet
+     <link rel="stylesheet" href="style.css">
+     -->
+
+    <!--scripts-->
+    <script src="deck.js/jquery-1.7.min.js"></script>
+    <script src="deck.js/modernizr.custom.js"></script>
+    <script src="deck.js/core/deck.core.js"></script>
+    <script src="deck.js/extensions/hash/deck.hash.js"></script>
+    <script src="deck.js/extensions/navigation/deck.navigation.js"></script>
+    <script src="deck.js/extensions/status/deck.status.js"></script>
+  </head>
+
+  <body class="deck-container">
+    
+      <section class='slide ' id='title'>
+        <h1 id='the_future_of_presentations'>The Future of Presentations</h1>
+      </section>
+      <section class='slide ' id='easy'>
+        <h2 id='keep_it_simple'>Keep it Simple</h2>
+
+<h3 id='making_good_presentations_was_never_easier_before'>Making good presentations was never easier before!</h3>
+
+<ul>
+<li>write simple text in your favourite markup language</li>
+
+<li>compile it to HTML</li>
+
+<li><code>Show off</code></li>
+</ul>
+      </section>
+      <section class='slide ' id='why'>
+        <h2 id='the_goods'>The Goods</h2>
+
+<ul>
+<li>
+<p><strong>easy to structure</strong></p>
+
+<ul>
+<li>make of the clean simple style of <em>markdown</em> text</li>
+
+<li>use your favourite editor with syntax highlighting</li>
+</ul>
+</li>
+
+<li>
+<p><strong>spread your document to several files</strong></p>
+</li>
+
+<li>
+<p>get a wonderful, elegant presentation using the outstanding <code>deck.js</code> library</p>
+</li>
+
+<li>
+<p>customized by your needs using by applying your CSS stylesheets</p>
+</li>
+</ul>
+      </section>
+      <section class='slide ' id='how'>
+        <h2 id='how_to_use'>How to use</h2>
+
+<p>Simply embed the <em>slide tag</em> into your markup:</p>
+
+<pre><code>#slide:title
+
+Here starts a new slide
+-----------------------</code></pre>
+      </section>
+      <section class='slide ' id='customize'>
+        <h2 id='customize'>Customize</h2>
+
+<p>A simple <em>#slide</em> followd by a colon followed by the slide title</p>
+
+<p>You can add custom css classes to the slide tag:</p>
+
+<pre><code>#slide:title:customclass</code></pre>
+
+<p>This will add <code>customclass</code> as a class to the resulting <em>section</em> html tag. You will need to add your custom style sheet to the <em>template.erb</em></p>
+      </section>
+      <section class='slide ' id='structure'>
+        <h2 id='structure_your_content'>Structure your content</h2>
+
+<p>Include other markdown files by using the <em>include tag</em></p>
+
+<pre><code>#include(&#39;intro.md&#39;)</code></pre>
+
+<p>Be sure all tags are are on a single new line, with no indentation!</p>
+      </section>
+      <section class='slide ' id='end'>
+        <h1 id='good_luck'>Good Luck!</h1>
+      </section>
+
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+    <p class="deck-status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+  </body>
+
+  <script>
+    $(function() {
+      $.deck('.slide');
+    });
+
+  </script>
+</html>

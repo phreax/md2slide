@@ -3,6 +3,7 @@
 The Future of Presentations
 ===========================
 
+
 #slide:easy
 
 Keep it Simple
@@ -25,7 +26,6 @@ The Goods
 - **spread your document to several files**
 - get a wonderful, elegant presentation using the outstanding `deck.js` library
 - customized by your needs using by applying your CSS stylesheets
-- 
 
 #slide:how
 
@@ -51,7 +51,7 @@ You can add custom css classes to the slide tag:
     #slide:title:customclass
 
 This will add `customclass` as a class to the resulting
-*<section>* html tag.
+*section* html tag.
 You will need to add your custom style sheet to the *template.erb*
 
 #slide:structure
