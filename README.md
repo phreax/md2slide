@@ -26,6 +26,10 @@ Simply embed the *slide tag* into your markup:
     Here starts a new slide
     -----------------------
 
+Compile it to HTML
+
+    ruby md2slide.rb <presentation.md>
+
 ### Customize
 
 A simple *#slide* followd by a colon followed by the slide title
