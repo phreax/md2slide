@@ -8,7 +8,7 @@ Keep it Simple
 
 - write simple text in your favourite markup language
 - compile it to HTML
-- `Show off`
+- **Show off**
 
 The Goods
 ---------
@@ -19,7 +19,7 @@ The Goods
 - **spread your document to several files**
 - get a wonderful, elegant presentation using the outstanding `deck.js` library
 - customized by your needs using by applying your CSS stylesheets
-- 
+
 How to use
 ----------
 
@@ -58,6 +58,8 @@ Requirements
 ------------
 
 - ruby
+- maruku
+- erubis
 - [deck.js] [deck]
 
 [deck]: http://imakewebthings.github.com/deck.js/ "deck.js"
