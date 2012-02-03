@@ -55,20 +55,6 @@ def find_slides(text)
   slides
 end
 
-# partial renderer
-class Erubis::Eruby
-  def render(opts) 
-    str = ""
-    if opts && opts.has_key?(:classes) && !opts[:classes].nil?
-      opts[:classes].each do |cl|
-        str += "class=\"#{cl}\" "
-      end
-    end 
-   str
-  end
-end
-
-
 def usage
   "Usage: ruby process.rb infile [outfile]"
 end
