@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>md2slide</title>
+    <meta name="viewport" content="width=1024, user-scalable=no">
+    <link rel="stylesheet" href="deck.js/core/deck.core.css">
+    <link rel="stylesheet" href="deck.js/extensions/hash/deck.hash.css">
+    <link rel="stylesheet" href="deck.js/extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" href="deck.js/extensions/status/deck.status.css">
+    <link rel="stylesheet" id="style-theme-link" href="deck.js/themes/style/neon.css">
+    <link rel="stylesheet" id="style-theme-link" href="deck.js/themes/style/neon.css">
+     <link rel="stylesheet" id="transition-theme-link" href="deck.js/themes/transition/vertical-slide.css">
+
+     <!-- add custom stylesheet
+     <link rel="stylesheet" href="style.css">
+     -->
+
+    <!--scripts-->
+    <script src="deck.js/jquery-1.7.min.js"></script>
+    <script src="deck.js/modernizr.custom.js"></script>
+    <script src="deck.js/core/deck.core.js"></script>
+    <script src="deck.js/extensions/hash/deck.hash.js"></script>
+    <script src="deck.js/extensions/navigation/deck.navigation.js"></script>
+    <script src="deck.js/extensions/status/deck.status.js"></script>
+  </head>
+
+  <body class="deck-container">
+    
+    <% slides.each do |name,val| %>
+      <section class='slide <%=val[:classes] %>' id='<%= name %>'>
+        <%= val[:content] %>
+      </section>
+    <% end %>
+
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+    <p class="deck-status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+  </body>
+
+  <script>
+    $(function() {
+      $.deck('.slide');
+    });
+
+  </script>
+</html>
