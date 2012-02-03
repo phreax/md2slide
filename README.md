@@ -1,8 +1,6 @@
 The Future of Presentations
-===========================
+---------------------------
 
-Keep it Simple
---------------
 
 ### Making good presentations was never easier before!
 
@@ -10,8 +8,7 @@ Keep it Simple
 - compile it to HTML
 - **Show off**
 
-The Goods
----------
+### The Goods
 
 - **easy to structure**
   + make of the clean simple style of *markdown* text
@@ -20,8 +17,7 @@ The Goods
 - get a wonderful, elegant presentation using the outstanding `deck.js` library
 - customized by your needs using by applying your CSS stylesheets
 
-How to use
-----------
+### How to use
 
 Simply embed the *slide tag* into your markup:
 
@@ -30,8 +26,7 @@ Simply embed the *slide tag* into your markup:
     Here starts a new slide
     -----------------------
 
-Customize
----------
+### Customize
 
 A simple *#slide* followd by a colon followed by the slide title
 
@@ -44,8 +39,7 @@ This will add `customclass` as a class to the resulting
 You will need to add your custom style sheet to the *template.erb*
 
 
-Structure your content
-----------------------
+### Structure your content
 
 Include other markdown files by using the *include tag*
 
@@ -54,8 +48,7 @@ Include other markdown files by using the *include tag*
 Be sure all tags are are on a single new line, with no
 indentation!
 
-Requirements
-------------
+### Requirements
 
 - ruby
 - maruku
